@@ -16,7 +16,7 @@ min_salary_counter = 0
 #Number of people
 register_count = 0
 
-while (inp := input("Insert a new person register[s/n]: ").lower() == 's' ):
+while (inp := input("Would you like to insert a new person register[s/n]: ").lower() == 's' ):
     #inputs
     salary = Decimal(input("Enter how much she receives: "))
     number_of_dependents = int(input("Enter how many children she has: "))
