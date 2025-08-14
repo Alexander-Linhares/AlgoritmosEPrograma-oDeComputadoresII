@@ -10,6 +10,7 @@ children_average = 0
 children_count = 0
 
 #About fagility situation 
+min_salary_value = 1570
 min_salary_average_people = 0
 min_salary_counter = 0
 
@@ -24,7 +25,7 @@ while (inp := input("Would you like to insert a new person register[s/n]: ").low
     #Count processing
     salary_sum += salary
     better_salary = salary if salary > better_salary else better_salary
-    min_salary_counter += 1 if salary <= 1570 else 0
+    min_salary_counter += 1 if salary <= min_salary_value else 0
     children_count += number_of_dependents if number_of_dependents != 0 else 0
     register_count += 1
 else:
